@@ -5,7 +5,7 @@ pipeline {
             steps { checkout scm }
         }
         stage('Run App') {
-            steps { sh 'python3 hello.py' }
+            steps { bat 'python hello.py' }
         }
     }
 }
